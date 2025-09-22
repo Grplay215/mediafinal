@@ -47,7 +47,9 @@ public class Medias {
     public void determinarStuacao(){
         if(media >= 5.0){
             resultado = "aprovado(a)";
-        }  else {
+        }  else if(media >= 3.0) {
+            resultado = "recuperação";
+        } else {
             resultado = "reprovado(a)";
         }
 
