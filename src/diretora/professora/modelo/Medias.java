@@ -39,15 +39,20 @@ public class Medias {
 
     public void calcularMedia(){
 
-        if(media <= 5.0){
-            resultado = "aprovado";
-        }  else {
-            resultado = "reprovado";
-        }
-
         media = nota1 + nota2 + nota3 + nota4 / 4;
 
+        determinarStuacao();
+    }
+
+    public void determinarStuacao(){
+        if(media >= 5.0){
+            resultado = "aprovado(a)";
+        }  else {
+            resultado = "reprovado(a)";
+        }
+
         exibirResultados();
+
     }
 
     public void exibirResultados() {
@@ -55,7 +60,7 @@ public class Medias {
         System.out.println("------------------------------");
         System.out.println("A media desse ano do(a) " +nomeDoAluno+ " é respectivamente " +media+ " ");
         System.out.println("------------------------------");
-        System.out.println("ele está " +resultado+ " ");
+        System.out.println("ele(a) está " +resultado+ " ");
 
     }
 }
