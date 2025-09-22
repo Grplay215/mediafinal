@@ -55,7 +55,7 @@ public class Medias {
         System.out.println("------------------------------");
         System.out.println("A media desse ano do(a) " +nomeDoAluno+ " é respectivamente " +media+ " ");
         System.out.println("------------------------------");
-        System.out.println(" " +resultado+ " ");
+        System.out.println("ele está " +resultado+ " ");
 
     }
 }
